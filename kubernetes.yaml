@@ -1,0 +1,50 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mbbweb-subscription-svc
+  labels:
+    app: mbbweb-subscription-app
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    app: mbbweb-subscription-app
+    service: mbbweb-subscription-svc
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: mbbweb-subscription-dep
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mbbweb-subscription-app
+        service: mbbweb-subscription-svc
+    spec:
+      containers:
+      - name: mbbweb-subscription-pod
+        image: ${REGISTRY}/${ORG}/${IMAGE}:${VERSION}
+        ports:
+        - name: http
+          containerPort: 80
+          protocol: TCP
+        env:
+          - name: BASE_URL
+            value: "https:\\/\\/admin.mybestbook.net"
+          - name: ARG1
+            value: "https:\\/\\/www.mybestbook.net"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mbbweb-subscription-nlb
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      nodePort: 30201
+  selector:
+    app: mbbweb-subscription-app

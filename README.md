@@ -1,2 +1,2 @@
-# microapp-module2
-MicroApp Module2 (inherited from MicroApp-Base)
+# microapp-module1
+MicroApp Module1 (inherited from MicroApp-Base)

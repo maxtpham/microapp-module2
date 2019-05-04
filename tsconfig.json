@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": { "*": ["base/types/*"] },
+    "target": "es6",
+    "sourceMap": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "types": ["node", "reflect-metadata"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "importHelpers": true,
+  },
+  "typeRoots": [
+    "./node_modules/@types"
+  ],
+  "include": [
+    "scripts/**/*"
+  ]
+}
