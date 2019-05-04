@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(http://localhost:3001/base/fonts/glyphicons-halflings-regular.eot);
-  src: url(http://localhost:3001/base/fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(http://localhost:3001/base/fonts/glyphicons-halflings-regular.woff2) format("woff2"), url(http://localhost:3001/base/fonts/glyphicons-halflings-regular.woff) format("woff"), url(http://localhost:3001/base/fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(http://localhost:3001/base/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg");
+  src: url(http://localhost:3002/base/fonts/glyphicons-halflings-regular.eot);
+  src: url(http://localhost:3002/base/fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(http://localhost:3002/base/fonts/glyphicons-halflings-regular.woff2) format("woff2"), url(http://localhost:3002/base/fonts/glyphicons-halflings-regular.woff) format("woff"), url(http://localhost:3002/base/fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(http://localhost:3002/base/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -149,7 +149,7 @@ div.mbb-body div.mbb-content {
 
 div.mbb-body div.mbb-content div.mbb-background-main {
   height: 100%;
-  background: url(http://localhost:3001/base/images/background_main.png) no-repeat;
+  background: url(http://localhost:3002/base/images/background_main.png) no-repeat;
   background-size: 100% auto;
   background-position: center; }
 
